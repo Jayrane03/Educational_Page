@@ -1,0 +1,93 @@
+img {
+    width: 47px;
+    height: 50px;
+}
+
+.navbar {
+    background-color: #25242A;
+    display: flex;
+    justify-content: space-between; /* Align items at start and end */
+    align-items: center; /* Center items vertically */
+}
+
+
+.navbar,
+.nav-link,
+.nav-brand
+{
+    letter-spacing: 1.2px;
+}
+
+.navLink {
+    color: #fff !important; /* Default link color */
+    font-size: 16px;
+    position: relative;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.navLink::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2.2px;
+    background-color: #7eec6d;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navLink:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.navLink:hover {
+    color: #7eec6d !important; /* Color on hover */
+}
+
+.navLink-div {
+    width: 60vw;
+    gap: 20px;
+    display: flex ;
+    justify-content: center ;
+}
+
+body {
+    background-color: #1C1B1E;
+}
+
+.navbar-brand {
+    color: aliceblue !important;
+}
+
+.logo {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    gap: 6px;
+    border-radius: 18px;
+    margin-left: -55px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.contact-btn {
+    transition: 0.3s ease;
+    text-align: center;
+    border: none;
+    font-weight: 400;
+    color: black;
+    box-shadow: 0 0 10px #7eec6d;
+    background-color: #7eec6d !important;
+}
+.contact-btn:hover{
+    color: black;
+}
+
