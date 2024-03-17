@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import ContactImg  from "E:/Education_Website/education_page/public/Images/contact_form.jpg"
+import ContactImg from "../../../public/Images/contact_form.jpg";
+
 import "../../Styles/courses.css";// Import the CSS file for styling
 
 const ContactForm = () => {

@@ -5,8 +5,14 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'build', // Change 'build' to the desired output directory name
+    outDir: 'build',
+    rollupOptions: {
+      external: ['/public/Images/contact_form.jpg']
+    } // Change 'build' to the desired output directory name
   },
+  
+
+
 })
 // vite.config.js
 
