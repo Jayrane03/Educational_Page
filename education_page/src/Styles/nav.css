@@ -135,6 +135,9 @@ body {
 .contact-btn{
     margin-bottom: 20px;
 }
+#cont-btn{
+    position: relative;
+}
 .ham.open {
   
     animation: rotateMenu 0.5s linear;

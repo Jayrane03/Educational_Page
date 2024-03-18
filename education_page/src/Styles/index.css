@@ -4,12 +4,13 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #121212;
-    overflow-x: auto !important;
+    overflow-x: hidden !important;
 }
 .section-home{
   height: 100vh;
   position: relative;
 }
+
 .glowing-bottom {
   position: absolute;
   right: 5%;
@@ -140,8 +141,9 @@ background-color:#5cb85c;
   
 }
 #c-bt:hover{
-  cursor: pointer !important;
+  cursor: pointer;
 }
+
 
 .course-card img {
   width: 300px;

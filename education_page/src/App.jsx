@@ -25,9 +25,7 @@ function App() {
     scrollReveal.reveal(`.course-section_new`, { origin: "right" });
     scrollReveal.reveal(`.contact-image`, { origin: "left" });
     scrollReveal.reveal(`.cont-form`, { origin: "right" });
-    // Add more reveal calls for other elements as needed
-
-    // Clean up function
+   
     return () => {
       scrollReveal.destroy();
     };
