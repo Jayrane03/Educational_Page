@@ -25,7 +25,7 @@ function CustomNav() {
           <Nav className={`me-auto navLink-div ${expanded ? 'expanded' : ''}`}>
             <Nav.Link className="navLink" href="#about">About</Nav.Link>
             <Nav.Link className="navLink" href="#features">Features</Nav.Link>
-            <Nav.Link className="navLink" href="#courses">Courses</Nav.Link>
+            <Nav.Link className="navLink" href="#course">Courses</Nav.Link>
             <Nav.Link className="navLink" href="#contact">Contact</Nav.Link>
             <Button variant="none" href='#contact' className='contact-btn ' id="cont-btn">Contact Us</Button>
           </Nav>

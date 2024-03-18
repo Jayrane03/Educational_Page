@@ -58,7 +58,7 @@ const Course = () => {
   return (
    <>
     <About></About>
-    <section className="course-section_new" id='courses'>
+    <section className="course-section_new" id='course'>
       <h1 className='sec-tit_new heading_text fs-2'>Courses We Provide</h1>
       <div className="course-section_new">
         {courseChunks.map((chunk, index) => (

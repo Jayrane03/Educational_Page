@@ -31,10 +31,11 @@ const Home = () => {
   }, []);
 
   const scrollToCourses = () => {
-    const coursesSection = document.getElementById('courses');
+    const coursesSection = document.getElementById('course');
     if (coursesSection) {
       coursesSection.scrollIntoView({ behavior: 'smooth' });
     }
+    // console.log("err")
   };
 
   return (
