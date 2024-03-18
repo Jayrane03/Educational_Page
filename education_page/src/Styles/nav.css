@@ -6,6 +6,7 @@ img {
 .navbar {
     background-color: #25242A;
     display: flex;
+    height: 10vh;
     justify-content: space-between; /* Align items at start and end */
     align-items: center; /* Center items vertically */
 }
@@ -87,7 +88,101 @@ body {
     box-shadow: 0 0 10px #7eec6d;
     background-color: #7eec6d !important;
 }
+#cont-btn{
+    position: absolute;
+    right: 4%;
+    top: 25%;
+}
 .contact-btn:hover{
     color: black;
 }
 
+.ham{
+    display: none !important;
+    font-size: 30px;
+
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Your styles for iPhone SE (2nd generation) */
+    .navbar-toggler{
+        display: none;
+    }
+    .ham {
+        display: block !important;
+        /* position: fixed !important; */
+        transition: 0.4s;
+        margin-left: 310px;
+        z-index: 100;
+        color: #7eec6d !important;
+        font-size: 35px;
+        
+}
+    
+   .logo img{
+    height: 35px;
+    width: 35px;
+   }
+ 
+   .logo{
+    position: absolute;
+    right: 38%;
+    /* top: 1%; */
+   }
+
+.contact-btn{
+    margin-bottom: 20px;
+}
+.ham.open {
+  
+    animation: rotateMenu 0.5s linear;
+  
+}
+  
+  @keyframes rotateMenu {
+    0% {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+}
+    100% {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+}
+  }
+ .navLink-div {
+  background: #25242A;
+  z-index: 10000;
+     background: #25242A;
+    z-index: 10000;
+    width: 100vw;
+    position: absolute;
+    gap: 20px;
+    margin: 50px -12px !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: height 0.4s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+
+  
+  .navLink-div.expanded {
+    max-height: 100vh;
+    max-width: 100vw !important; /* Expanded width */
+  } 
+  
+  
+ 
+     
+}

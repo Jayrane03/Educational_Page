@@ -29,7 +29,8 @@
   /* height: 40vh; */
 
   width: 310px;
-  background-color: #7eec6d;
+  /* height: 550px; */
+  background-color: #bdf6af;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -41,7 +42,7 @@
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 50%;
+  height: 20%;
 }
 
 .course-details_new  {
@@ -182,6 +183,14 @@
   height: 380px;
 
 }
+.alert-div{
+  border: none;
+  text-align: center;
+  background-color: #2d422d !important;
+  color: #ffffff !important;  
+}
+
+
 
 /* About  */
 #about {
@@ -239,3 +248,36 @@
   background-color: #7eec6d;
   height: 2.2px;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  /* CONTACT  */
+  .contact-form-container{
+    max-width: 90vw;
+
+  }
+  .cont-page{
+    flex-direction: column;
+  }
+  .contact-image img{
+    width: 250px;
+    height:  250px;
+    margin-bottom: 40px;
+  }
+  .cont-page form input,
+  .cont-page form textarea {
+      width: 70vw;
+  }
+  
+  .contact-form-container h2::before{
+    
+    left: 35%;
+}
+
+
+  }
+
+ 

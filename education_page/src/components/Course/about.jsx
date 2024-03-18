@@ -1,9 +1,12 @@
 import React from 'react';
 import '../../Styles/courses.css';
+import '../../Styles/index.css'
 import AboutImg from "../../../public/Images/stud.jpg"
+import FeatureSection from './feature';
 
 const About = () => {
   return (
+   <>
     <section id='about'>
         <h1 id="abt-heading">About Us</h1>
       <div className="about-container">
@@ -23,6 +26,8 @@ const About = () => {
         </div>
       </div>
     </section>
+    <FeatureSection></FeatureSection>
+   </>
   );
 };
 

@@ -14,9 +14,12 @@ const Feature = ({ icon, title, description }) => {
 // FeatureSection component representing the section containing multiple features
 const FeatureSection = () => {
   return (
-    <section className="feature-section">
-      <div className="container">
-        <h2>Features</h2>
+    
+    <section className="feature-section" id='features'>
+         <h2>Features</h2>
+       
+      <div className="feat-container">
+        
         <div className="features">
           <Feature
             icon={<i className="fas fa-chalkboard-teacher"></i>}

@@ -40,7 +40,7 @@ const Home = () => {
           <p>
             Welcome to BrainBoost, where learning meets convenience! <span className='span_green'>Whether you're a student, educator, or lifelong learner, we have something for everyone.</span> Explore our diverse range of courses and resources designed to empower you on your learning journey.
           </p>
-          <Button variant="none" href="courses"className='contact-btn w-25 p-2 ' id='c-bt'>COURSES</Button>
+          <Button variant="none" href="courses"className='contact-btn w-25 p-2  course-btn' id='c-bt'>COURSES</Button>
         </div>
         <div className="image-container">
           <div className="box_1">
