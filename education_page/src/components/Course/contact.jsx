@@ -47,12 +47,12 @@ const ContactForm = () => {
     <>
       <section id='contact'>
         <div className="contact-form-container">
-          <h2>Contact Us</h2>
+          <h2 className='heading_text'>Contact Us</h2>
           <div className="cont-page">
             <div className="contact-image">
               <img src={ContactImg} alt="" />
             </div>
-            <form onSubmit={handleSubmit}>
+            <form className='cont-form' onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="name"

@@ -16,7 +16,7 @@ const FeatureSection = () => {
   return (
     
     <section className="feature-section" id='features'>
-         <h2>Features</h2>
+         <h2 className='heading_text fs-2'>Features</h2>
        
       <div className="feat-container">
         

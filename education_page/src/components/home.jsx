@@ -3,7 +3,9 @@ import CustomNav from './Header/nav'; // Corrected file name
 import { Button } from 'react-bootstrap';
 import Typed from 'typed.js';
 
+
 const Home = () => {
+ 
   useEffect(() => {
     const strings = ["Your Learning Companion", "Welcome to LearnHub!", "Explore our courses and resources"];
     let index = 0;
