@@ -1,42 +1,41 @@
 import React from 'react';
+import "../../Styles/index.css";
 
-// Feature component representing a single feature
-const Feature = ({ icon, title, description }) => {
+const Footer = () => {
   return (
-    <div className="feature">
-      <div className="icon">{icon}</div>
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-};
-
-// FeatureSection component representing the section containing multiple features
-const FeatureSection = () => {
-  return (
-    <section className="feature-section">
-      <div className="container">
-        <h2>Features</h2>
-        <div className="features">
-          <Feature
-            icon={<i className="fas fa-chalkboard-teacher"></i>}
-            title="Personalized Learning"
-            description="Adaptive learning technology tailors the curriculum to each student's strengths and weaknesses."
-          />
-          <Feature
-            icon={<i className="fas fa-users"></i>}
-            title="Collaborative Learning"
-            description="Engage with peers through group projects, discussion forums, and peer-to-peer tutoring."
-          />
-          <Feature
-            icon={<i className="fas fa-laptop-code"></i>}
-            title="Interactive Content"
-            description="Interactive lessons, quizzes, simulations, and virtual labs provide hands-on learning experiences."
-          />
+    <footer className='foot' style={{ backgroundColor: '#7eec6d', color: '#fff' }}>
+      <div className="footer-content">
+        <div className="footer-section about">
+          <h2>About Us</h2>
+          <p>BrainBoost provides dynamic and interactive content across various subjects and disciplines.
+</p>
+          <div className="contact">
+            <span><i className="fas fa-phone"></i> &nbsp; 123-456-7890</span>
+            <span><i className="fas fa-envelope"></i> &nbsp; info@brainboost.com</span>
+          </div>
+        </div>
+        <div className="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#" className='fs-5 fw-medium'>Home</a></li>
+            <li><a href="#" className='fs-5 fw-medium'>Courses</a></li>
+            <li><a href="#" className='fs-5 fw-medium'>About Us</a></li>
+            <li><a href="#" className='fs-5 fw-medium'>Contact</a></li>
+          </ul>
+        </div>
+        <div className="footer-section follow">
+          <h2>Follow Us</h2>
+          <div className="social-links">
+            <a href="#" className='m-2 fs-4'><i className="fab fa-facebook"></i></a>
+            <a href="#" className='m-2 fs-4'><i className="fab fa-twitter"></i></a>
+            <a href="#" className='m-2 fs-4'><i className="fab fa-instagram"></i></a>
+            <a href="#" className='m-2 fs-4'><i className="fab fa-linkedin"></i></a>
+          </div>
         </div>
       </div>
-    </section>
+      <p className="footer-bottom">&copy; 2024 BrainBoost. All rights reserved.</p>
+    </footer>
   );
-};
+}
 
-export default FeatureSection;
+export default Footer;
